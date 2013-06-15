@@ -2,4 +2,46 @@
 
   $color-brown-dark: #3d332c;
   $color-brown-light: #bab2ab;
+  $color-bg: #e7e7e5;
+
+  $color-light: #fff;
+
+/* FONTS */
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 600;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .button {
+    font-family: 'proxima-nova', sans-serif;
+  }
+
+
+/* GENERAL */
   
+  body {
+    background: $color-bg;
+    font-family: "jaf-facitweb",sans-serif;
+  }
+
+  #main-header {
+    background: $color-brown-dark;
+    color: $color-light;
+
+    label { color: $color-light; }
+
+    h1.title { color: $color-light; font-size: 24px; }
+  }
+
+  #main-footer {
+
+    background: $color-brown-dark;
+    color: $color-light;
+
+  }
