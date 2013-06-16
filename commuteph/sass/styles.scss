@@ -22,11 +22,34 @@
     font-family: 'proxima-nova', sans-serif;
   }
 
+  .search h2, .page h2 { margin-top: 20px; }
+
+  h2 span.desc {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+
+/* FORMS */
+
+  .button {
+    font-weight: 400; 
+    .desc, .action {
+      display: block;
+      line-height: 1.5;
+    }
+    .action {
+      font-size: 24px;
+    }
+  }
+
 
 /* GENERAL */
   
   body {
-    background: $color-bg;
+    background: url('../img/bg.jpg') 0 0 no-repeat $color-bg;
+    background-size: 100%;
     font-family: "jaf-facitweb",sans-serif;
   }
 
@@ -39,9 +62,49 @@
     h1.title { color: $color-light; font-size: 24px; }
   }
 
+  .header-search {
+    form {
+      padding-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+
   #main-footer {
 
     background: $color-brown-dark;
     color: $color-light;
+    padding-top: 15px;
+    p, ul { font-size: 0.813em; }
 
   }
+
+/* CONTENT */
+  
+  .set-directions {
+    border: 1px solid #ccccca;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .inline-list {
+      border-top: 1px solid #ccccca;
+      margin: 0 -15px;
+      padding-top: 15px;
+    }
+  }
+
+/* PAGE: ADD ROUTE */
+  
+  .rates {
+    font-size: 12px;
+    font-family: 'proxima-nova', sans-serif;
+    li { list-style-type: none; }
+    .label { font-weight: normal; }
+  }
+
+
+
