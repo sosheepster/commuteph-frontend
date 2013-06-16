@@ -32,8 +32,8 @@
           <li><a href="browse.php">Browse Directions</a></li>
           <li><a href="browse-missing.php">Routes that Need Directions</a></li>
           <li><a href="add-route-blank.php">Add Directions</a></li>
-          <li><a href="#">Contribute</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contribute.php">Contribute</a></li>
+          <li><a href="#" data-reveal-id="contactUs">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -42,6 +42,18 @@
     <a class="close-reveal-modal">&#215;</a>
     <h2>Send us Feedback</h2>
 
+  </div>
+  <div id="contactUs" class="reveal-modal small">
+    <a class="close-reveal-modal">&#215;</a>
+    <h2>Contact Us</h2>
+
+    <p>You can contact us through these channels: 
+      <ul>
+        <li><a href="https://www.facebook.com/Commute.PH" target="_blank">sending us a message on Facebook</a></li>
+        <li><a href="http://twitter.com/CommutePH" target="_blank">sending a Direct Message on Twitter</a></li>
+      </ul>
+      or you can also send us an email at: ____
+    </p>
   </div>
   <script>
   document.write('<script src=' +
