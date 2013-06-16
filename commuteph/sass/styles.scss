@@ -163,6 +163,13 @@
     font-size: emCalc(11px);
   }
 
+  #main-footer {
+    ul { list-style-type: none; }
+    a:hover { text-decoration: underline; }
+  }
+
+  hr { border-color: #7e6351; }
+
 /* CONTENT */
   
   .set-directions {
@@ -345,3 +352,27 @@
     max-height: 129px;
     overflow: auto;
   }
+
+/* PAGE: TEAM */
+
+  .team-member {
+    .position { color: $color-light; padding: emCalc(10px); font-size: emCalc(12px);}
+    a { color: $color-light; font-style: italic; }
+    a:hover { text-decoration: underline; }
+
+    &.jolo {
+      .position { background: $add-jeep;}
+    }
+    &.ian {
+      .position { background: $add-fx;}
+    }
+    &.camille {
+      .position { background: $add-alight;}
+    }
+    &.jp {
+      .position { background: $add-lrt2;}
+    }
+  }
+
+
+

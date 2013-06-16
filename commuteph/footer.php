@@ -1,10 +1,31 @@
 
   <footer id="main-footer">
     <div class="row">
-      <div class="small-12 columns">
-        <p>commute.ph is run by Jolo Balbin, Camille Zapata, JP Dela Torre, and Christian Maglalang. <a href="#">About us</a></p>
+      <div class="small-12 large-4 columns">
+        <p>commute.ph is run by <a href="https://twitter.com/MojoJolo" target="_blank">Jolo Balbin</a>, <a href="https://twitter.com/sosheepster" target="_blank">Camille Zapata</a>, <a href="https://twitter.com/jpdelatorre" target="_blank">JP Dela Torre</a>, and <a href="https://twitter.com/maglalang17" target="_blank">Ian Maglalang</a></p>
+      </div>
+      <div class="small-12 large-4 columns">
+        <ul>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="http://blog.commute.ph">Blog</a></li>
+          <li><a href="#" data-reveal-id="sendFeedback">Send Us Feedback</a></li>
+        </ul>
+      </div>
+      <div class="small-12 large-4 columns">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=296833577072818";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="https://www.facebook.com/Commute.PH" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
+        <a href="https://twitter.com/CommutePH" class="twitter-follow-button" data-show-count="false">Follow @CommutePH</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
     </div>
+    <hr />
     <div class="row">
       <div class="small-12 columns">
         <ul class="inline-list">
@@ -17,7 +38,11 @@
       </div>
     </div>
   </footer>
+  <div id="sendFeedback" class="reveal-modal small">
+    <a class="close-reveal-modal">&#215;</a>
+    <h2>Send us Feedback</h2>
 
+  </div>
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
