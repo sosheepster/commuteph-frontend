@@ -10,7 +10,7 @@
         <ul class="inline-list">
           <li><a href="browse.php">Browse Directions</a></li>
           <li><a href="browse-missing.php">Routes that Need Directions</a></li>
-          <li><a href="add-route.php">Add Directions</a></li>
+          <li><a href="add-route-blank.php">Add Directions</a></li>
           <li><a href="#">Contribute</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
