@@ -28,8 +28,8 @@
 
         <div class="button-bar">
           <ul class="button-group">
-            <li><a href="browse.php" class="small button">Browse</a></li>
-            <li><a href="add-route-blank.php" class="small button">Add a Route</a></li>
+            <li><a href="browse.php" class="small button secondary">Browse</a></li>
+            <li><a href="add-route-blank.php" class="small button secondary">Add a Route</a></li>
           </ul>
         </div>
 

@@ -15,6 +15,16 @@
 
   $color-border: #ccccca;
 
+  $add-walk: #5a2d0d;
+  $add-trike: #58a8ad;
+  $add-jeep: #125dbb;
+  $add-bus: #b7590e;
+  $add-fx: #c69a02;
+  $add-mrt: #340a73;
+  $add-lrt: #654398;
+  $add-lrt2: #9373c3;
+  $add-alight: #b02a3d;
+
 /* FONTS */
 
   $secondary-font:  'proxima-nova', sans-serif;
@@ -61,7 +71,10 @@
     legend {
       background: $color-brown-light;
       padding: emCalc(10px);
+      font-family: $secondary-font;
     }
+
+    p { font-size: emCalc(12px);}
   }
 
 
@@ -186,6 +199,45 @@
     font-family: $secondary-font;
     li { list-style-type: none; }
     .label { font-weight: normal; }
+  }
+
+  .add-directions-buttons {
+    letter-spacing: 1px;
+    .button {
+      border-color: $color-brown-dark;
+      &.add-walk { background: $add-walk; }
+      &.add-trike { background: $add-trike; }
+      &.add-jeep { background: $add-jeep; }
+      &.add-bus { background: $add-bus; }
+      &.add-fx { background: $add-fx; }
+      &.add-mrt { background: $add-mrt; }
+      &.add-lrt { background: $add-lrt; }
+      &.add-lrt2 { background: $add-lrt2; }
+      &.add-alight { background: $add-alight; }
+    }
+  }
+
+  .route-building {
+    fieldset {
+      &.add-walk { border-left: 15px solid $add-walk; }
+      &.add-trike { border-left: 15px solid $add-trike; }
+      &.add-jeep { border-left: 15px solid $add-jeep; }
+      &.add-bus { border-left: 15px solid $add-bus; }
+      &.add-fx { border-left: 15px solid $add-fx; }
+      &.add-mrt { border-left: 15px solid $add-mrt; }
+      &.add-lrt { border-left: 15px solid $add-lrt; }
+      &.add-lrt2 { border-left: 15px solid $add-lrt2; }
+      &.add-alight { border-left: 15px solid $add-alight; }
+    }
+
+  }
+
+  [data-magellan-expedition] {
+    background: #f3f3f3;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.25);
+    border-top: 3px solid $color-brown;
+
+    .button-group li a.button { margin: 0 !important; }
   }
 
 
