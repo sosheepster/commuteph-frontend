@@ -1,15 +1,15 @@
 <?php include('header.php'); ?>
 
   <div class="row">
-    <div class="large-6 small-12 push-3 columns">
+    <div class="large-9 small-12 columns">
       <section class="page">
-        <h2><a href="#route-page"><span class="desc">Directions From</span>
-            <span class="pointA">Cubao Station (MRT)</span> to <span class="pointB">Eastwood City</span></a></h2>
+        <h2><span class="desc">Directions From</span>
+            <span class="pointA">Cubao Station (MRT)</span> to <span class="pointB">Eastwood City</span></h2>
         <section class="set-directions">
           <div class="directions">
             <ul class="list-directions">
               <li class="jeep">Ride Jeep to <strong>Katipunan</strong> bound to <em>Katipunan</em></li>
-              <li class="train">Ride <strong>LRT2 to Cubao</strong></li>
+              <li class="lrt2">Ride <strong>LRT2 to Cubao</strong></li>
               <li class="jeep">Ride Jeep to <strong>Eastwood City</strong> bound to <em>Rosario</em></li>
             </ul>
           </div>
@@ -34,20 +34,18 @@
         </a>
       </section>
 
-      <section class="comments">
-        FB comments here
-      </section>
-    </div>
-    <div class="large-3 pull-6 columns">
-      <?php include('widgets/sidebar-needroutes.php'); ?>
-      <?php include('widgets/sidebar-recentadded.php'); ?>
-    </div>
-    <div class="large-3 columns">
       <!-- RELATED ROUTES FOR SEARCH RESULTS:
             list down other routes that may contain PointA or PointB of search.
             limit to 10 -->
       <?php include('widgets/sidebar-search-similar.php'); ?>
+
+      <section class="comments">
+        FB comments here
+      </section>
+    </div>
+    <div class="large-3 columns">
       <?php include('widgets/sidebar-popular.php'); ?>
+      <?php include('widgets/sidebar-needroutes.php'); ?>
     </div>
   </div>
 

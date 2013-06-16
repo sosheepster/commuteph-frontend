@@ -9,6 +9,7 @@
   $color-brown-dark: #3d332c;
   $color-brown-light: #bab2ab;
   $color-blue: #2f63a5;
+  $color-red: #ca2c46;
   $color-bg: #e7e7e5;
 
   $color-light: #fff;
@@ -45,10 +46,14 @@
 
   .search h2, .page h2 { margin-top: 20px; }
 
-  h2 span.desc {
-    display: block;
-    font-size:  emCalc(18px);
-    text-transform: uppercase;
+  h2 {
+    .desc {
+      display: block;
+      font-size:  emCalc(18px);
+      text-transform: uppercase;
+    }
+    .pointA { color: $color-blue; }
+    .pointB { color: $color-red; }
   }
 
 
@@ -143,6 +148,21 @@
 
   .hide { display: none; }
 
+  .button-bar {
+    .desc {
+      font-family: $secondary-font;
+      font-weight: 700;
+      margin-right: emCalc(20px);
+      text-transform: uppercase;
+
+      span { display: block; padding-top: 2px; }
+    }
+  }
+
+  .copy-info p {
+    font-size: emCalc(11px);
+  }
+
 /* CONTENT */
   
   .set-directions {
@@ -218,6 +238,10 @@
       &.add-lrt2 { background: $add-lrt2; }
       &.add-alight { background: $add-alight; }
     }
+
+    &.filter {
+      margin-bottom: emCalc(20px);
+    }
   }
 
   .route-building {
@@ -261,7 +285,6 @@
     .button-group li a.button { margin: 0 !important; }
   }
 
-
 /* PAGE: BROWSE */
 
   .browse-routes {
@@ -279,3 +302,46 @@
     a:hover { color: #3d332c; }
   }
 
+/* PAGE: SEARCH RESULTS */
+
+  .set-directions {
+    h4 {
+      a {
+        color: #ce643b;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .reactions {
+      font-size: emCalc(14px);
+      a { color: #afafa5; }
+      a:hover { color: #90907d; }
+    }
+  }
+
+  .list-directions {
+    list-style-type: none;
+    li { 
+      padding: emCalc(6px) emCalc(15px);
+      margin-bottom: 1px;
+    }
+    $list-directions-border: 10px;
+    .walk { border-left: $list-directions-border solid $add-walk; }
+    .trike { border-left: $list-directions-border solid $add-trike; }
+    .jeep { border-left: $list-directions-border solid $add-jeep; }
+    .bus { border-left: $list-directions-border solid $add-bus; }
+    .fx { border-left: $list-directions-border solid $add-fx; }
+    .mrt { border-left: $list-directions-border solid $add-mrt; }
+    .lrt { border-left: $list-directions-border solid $add-lrt; }
+    .lrt2 { border-left: $list-directions-border solid $add-lrt2; }
+    .alight { border-left: $list-directions-border solid $add-alight; }
+  }
+
+/* PAGE: ROUTE */
+  
+  .related-routes {
+    max-height: 129px;
+    overflow: auto;
+  }
