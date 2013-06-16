@@ -1,15 +1,26 @@
-/* COLORS */
+// Global Foundation Settings
+@import "settings";
 
+
+
+/* COLORS */
+  
+  $color-brown: #7c6a5e;
   $color-brown-dark: #3d332c;
   $color-brown-light: #bab2ab;
+  $color-blue: #2f63a5;
   $color-bg: #e7e7e5;
 
   $color-light: #fff;
 
+  $color-border: #ccccca;
+
 /* FONTS */
 
+  $secondary-font:  'proxima-nova', sans-serif;
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'proxima-nova', sans-serif;
+    font-family: $secondary-font;
     font-weight: 600;
   }
 
@@ -19,14 +30,14 @@
   }
 
   .button {
-    font-family: 'proxima-nova', sans-serif;
+    font-family: $secondary-font;
   }
 
   .search h2, .page h2 { margin-top: 20px; }
 
   h2 span.desc {
     display: block;
-    font-size: 18px;
+    font-size:  emCalc(18px);
     text-transform: uppercase;
   }
 
@@ -41,6 +52,15 @@
     }
     .action {
       font-size: 24px;
+    }
+  }
+
+  fieldset {
+    background: $color-bg;
+
+    legend {
+      background: $color-brown-light;
+      padding: emCalc(10px);
     }
   }
 
@@ -76,12 +96,41 @@
     padding-top: 15px;
     p, ul { font-size: 0.813em; }
 
+    a { color: #bab2ab; }
+  }
+
+  .panel {
+    background: $color-bg; 
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: emCalc(14px);
+
+    a:hover { color: $color-brown-dark; }
+
+    .side-nav {
+      li {
+        border-bottom: 1px solid $color-border;
+        padding: emCalc(10px) 0;
+        margin: 0;
+
+        &:last-child { border: 0; }
+      }
+    }
+
+    h3 {
+      background: #3d332c;
+      color: $color-light;
+      padding: emCalc(15px);
+      margin: 0 emCalc(-18px);
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
   }
 
 /* CONTENT */
   
   .set-directions {
-    border: 1px solid #ccccca;
+    border: 1px solid $color-border;
     padding: 15px;
     margin-bottom: 20px;
     background: #fff;
@@ -91,20 +140,69 @@
     }
 
     .inline-list {
-      border-top: 1px solid #ccccca;
+      border-top: 1px solid $color-border;
       margin: 0 -15px;
       padding-top: 15px;
     }
   }
 
+/* PAGE: HOME */
+
+  .intro-image {
+    text-align: center;
+    margin-top: emCalc(20px);
+  }
+
+  .home-nav {
+    background: $color-bg; 
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: emCalc(24px);
+    font-family: $secondary-font;
+
+    li { 
+      margin: 0 emCalc(-15px);
+      list-style-type: none; 
+      padding: emCalc(15px);
+      &:nth-child(odd) { background: #dddcd4; }
+    }
+
+    a { color: $color-brown; font-weight: 600; }
+  }
+
+  .panel.home {
+    .desc {
+      font-size: emCalc(18px);
+      padding: emCalc(15px) 0 ;
+      line-height: 1.3;
+    }
+    h3 { margin: 0 emCalc(-18px); background: $color-blue; }
+  }
+
 /* PAGE: ADD ROUTE */
   
   .rates {
-    font-size: 12px;
-    font-family: 'proxima-nova', sans-serif;
+    font-size: emCalc(12px);
+    font-family: $secondary-font;
     li { list-style-type: none; }
     .label { font-weight: normal; }
   }
 
 
+/* PAGE: BROWSE */
+
+  .browse-routes {
+    li {
+      list-style-type: none;
+      background: $color-bg;
+      border-bottom: 1px solid $color-border;
+      padding: 10px 15px;
+    }
+    li:hover {
+      background: #fff;
+    }
+
+    a { color: #755f4f; }
+    a:hover { color: #3d332c; }
+  }
 

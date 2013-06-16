@@ -8,8 +8,9 @@
     <div class="row">
       <div class="small-12 columns">
         <ul class="inline-list">
-          <li><a href="#">Browse Routes</a></li>
-          <li><a href="#">Add Directions</a></li>
+          <li><a href="browse.php">Browse Directions</a></li>
+          <li><a href="browse-missing.php">Routes that Need Directions</a></li>
+          <li><a href="add-route.php">Add Directions</a></li>
           <li><a href="#">Contribute</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>

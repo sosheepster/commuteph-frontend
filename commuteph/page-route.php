@@ -3,7 +3,7 @@
   <div class="row">
     <div class="large-6 small-12 push-3 columns">
       <section class="page">
-        <h2><a href="#route-page"><span class="desc">From</span>
+        <h2><a href="#route-page"><span class="desc">Directions From</span>
             <span class="pointA">Cubao Station (MRT)</span> to <span class="pointB">Eastwood City</span></a></h2>
         <section class="set-directions">
           <div class="directions">
