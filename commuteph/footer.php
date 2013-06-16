@@ -23,6 +23,8 @@
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
+    
+  <script src="js/vendor/jquery.js"></script>
   
   <script src="js/foundation/foundation.js"></script>
   
@@ -53,8 +55,11 @@
   <script src="js/foundation/foundation.tooltips.js"></script>
   
   <script src="js/foundation/foundation.topbar.js"></script>
-  
-  
+
+  <script src="js/smooth-scroll.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
   <script>
     $(document).foundation();
   </script>

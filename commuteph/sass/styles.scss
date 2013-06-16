@@ -67,6 +67,7 @@
 
   fieldset {
     background: $color-bg;
+    box-shadow: 0 2px 2px rgba(61,51,44,0.25);
 
     legend {
       background: $color-brown-light;
@@ -74,7 +75,7 @@
       font-family: $secondary-font;
     }
 
-    p { font-size: emCalc(12px);}
+    p { font-size: emCalc(12px); color: #64615c; margin-left: 50px; }
   }
 
 
@@ -139,6 +140,8 @@
       line-height: 1.5;
     }
   }
+
+  .hide { display: none; }
 
 /* CONTENT */
   
@@ -228,8 +231,26 @@
       &.add-lrt { border-left: 15px solid $add-lrt; }
       &.add-lrt2 { border-left: 15px solid $add-lrt2; }
       &.add-alight { border-left: 15px solid $add-alight; }
+
+      position: relative;
+
+      .delete {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: emCalc(24px);
+        font-weight: 700;
+        padding: 5px 15px !important;
+      }
+    }
+    label {
+      font-family: $secondary-font;
+      font-weight: 700;
     }
 
+    .status {
+      margin-top: emCalc(20px);
+    }
   }
 
   [data-magellan-expedition] {
