@@ -3,8 +3,7 @@
   <div class="row">
     <div class="large-9 columns">
       <section class="search">
-        <h2><span class="desc">Searching directions from</span>
-            <span class="pointA">Cubao Station (MRT)</span> to <span class="pointB">Eastwood City</span></h2>
+        <h2>Directions tagged with '<span class="tag-name">malls</span>'</h2>
         <h3 class="search-status">2 directions found</h3>
 
         <a name="form-top"></a>
@@ -37,8 +36,8 @@
           <div class="tags">
             <dl class="sub-nav tags-nav">
               <dt>Tags</dt>
-              <dd><a href="search-tags.php">#malls</a></dd>
-              <dd><a href="search-tags.php">#trains</a></dd>
+              <dd><a href="#">#malls</a></dd>
+              <dd><a href="#">#trains</a></dd>
             </dl>
           </div>
           <div class="reactions">
@@ -67,8 +66,8 @@
           <div class="tags">
             <dl class="sub-nav tags-nav">
               <dt>Tags</dt>
-              <dd><a href="search-tags.php">#schools</a></dd>
-              <dd><a href="search-tags.php">#malls</a></dd>
+              <dd><a href="#">#schools</a></dd>
+              <dd><a href="#">#malls</a></dd>
             </dl>
           </div>
           <div class="reactions">
@@ -86,10 +85,7 @@
           </ul>
         </section>
 
-        <a href="add-route.php" class="button expand">
-          <span class="desc">Have a better route in mind?</span>
-          <span class="action">Add Directions</span>
-        </a>
+        <?php include('widgets/pagination.php'); ?>
       </section>
     </div>
     <div class="large-3 columns">

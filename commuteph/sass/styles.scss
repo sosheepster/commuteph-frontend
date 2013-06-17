@@ -170,6 +170,15 @@
 
   hr { border-color: #7e6351; }
 
+  .tags {
+    font-size: emCalc(12px);
+    text-transform: lowercase;
+    a { color: #c9c7bf !important; }
+    a:hover { text-decoration: underline; }
+
+    .sub-nav { margin-bottom: 0; }
+  }
+
 /* CONTENT */
   
   .set-directions {

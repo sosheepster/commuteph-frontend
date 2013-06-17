@@ -13,6 +13,13 @@
               <li class="jeep">Ride Jeep to <strong>Eastwood City</strong> bound to <em>Rosario</em></li>
             </ul>
           </div>
+          <div class="tags">
+            <dl class="sub-nav tags-nav">
+              <dt>Tags</dt>
+              <dd><a href="search-tags.php">#malls</a></dd>
+              <dd><a href="search-tags.php">#trains</a></dd>
+            </dl>
+          </div>
           <div class="reactions">
             <ul class="inline-list">
               <li><a href="#">Upvote</a></li>
