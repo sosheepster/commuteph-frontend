@@ -42,18 +42,7 @@
             </ul>
           </li>
           <li class="divider"></li>
-          <li class="has-form">
-            <form>
-              <div class="row collapse">
-                <div class="small-8 columns">
-                  <input type="text" placeholder="Find routes, directions">
-                </div>
-                <div class="small-4 columns">
-                  <a href="#" class="alert button">Search</a>
-                </div>
-              </div>
-            </form>
-          </li>
+          <li class="active"><a href="main.php">Logout</a></li>
           <li class="divider show-for-small"></li>
         </ul>
 
