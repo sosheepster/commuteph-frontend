@@ -62,11 +62,39 @@
         <section>
           <p class="title" data-section-title><a href="#tags">Tags</a></p>
           <div class="content content-tags" data-slug="tags" data-section-content>
+            <h2>List of Tags</h2>
+            <form>
+              <div class="row collapse">
+                <div class="small-10 columns">
+                  <input type="text" placeholder="Find tag by name">
+                </div>
+                <div class="small-2 columns">
+                  <input type="submit" value="Search" class="button prefix">
+                </div>
+              </div>
+            </form>
+
+            <?php include('widgets/list-tags.php'); ?>
+            <?php include('widgets/pagination.php'); ?>
           </div>
         </section>
         <section>
           <p class="title" data-section-title><a href="#locations">Locations</a></p>
           <div class="content content-locations" data-slug="locations" data-section-content>
+            <h2>List of Locations</h2>
+            <form>
+              <div class="row collapse">
+                <div class="small-10 columns">
+                  <input type="text" placeholder="Find location by name">
+                </div>
+                <div class="small-2 columns">
+                  <input type="submit" value="Search" class="button prefix">
+                </div>
+              </div>
+            </form>
+
+            <?php include('widgets/list-locs.php'); ?>
+            <?php include('widgets/pagination.php'); ?>
           </div>
         </section>
       </div>

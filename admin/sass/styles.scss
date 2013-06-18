@@ -1,3 +1,10 @@
 // Global Foundation Settings
 @import "settings";
 
+header.page {
+  margin-top: emCalc(20px);
+}
+
+#main-header {
+  .top-bar { margin-bottom: 0; }
+}

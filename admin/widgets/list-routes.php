@@ -10,7 +10,7 @@
   <tbody>
     <tr>
       <td>
-        <a href="page-route.php">Cubao to Quiapo</a><br />
+        <a href="edit-route.php">Cubao to Quiapo</a><br />
         <small>last updated by <a href="#">username</a></small>
       </td>
       <td><input type="text" class="tags" name="location"></td>
@@ -23,7 +23,7 @@
       <td><a href="#" class="button small delete secondary" data-reveal-id="deleteModal">&times;</a></td>
     </tr>
     <tr>
-      <td><a href="page-direction.php">Cubao to Quiapo</a></td>
+      <td><a href="edit-route.php">Cubao to Quiapo</a></td>
       <td><input type="text" class="tags" name="location"></td>
       <td>
         <ul class="button-group">
@@ -34,7 +34,7 @@
       <td><a href="#" class="button small delete secondary" data-reveal-id="deleteModal">&times;</a></td>
     </tr>
     <tr>
-      <td><a href="page-direction.php">Katipunan to SM Mall of Asia (MOA)</a></td>
+      <td><a href="edit-route.php">Katipunan to SM Mall of Asia (MOA)</a></td>
       <td><input type="text" class="tags" name="location"></td>
       <td>
         <ul class="button-group">
