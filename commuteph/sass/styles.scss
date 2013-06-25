@@ -242,6 +242,11 @@
 
   .add-directions-buttons {
     letter-spacing: 1px;
+    border-top: 2px solid $color-brown-dark;
+    background: $color-light; 
+    padding: emCalc(15px);
+    margin: emCalc(40px) -25% emCalc(20px) 0;
+
     .button {
       border-color: $color-brown-dark;
       &.add-walk { background: $add-walk; }
@@ -262,6 +267,7 @@
 
   .route-building {
     fieldset {
+      border: 0; 
       &.add-walk { border-left: 15px solid $add-walk; }
       &.add-trike { border-left: 15px solid $add-trike; }
       &.add-jeep { border-left: 15px solid $add-jeep; }

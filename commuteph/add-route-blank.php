@@ -20,25 +20,10 @@
           </div>
         </div>
 
-        <div class="button-bar add-directions-buttons" data-magellan-expedition="fixed">
-          <ul class="button-group">
-            <li><a href="#form-bottom" class="small button add-direction add-alight">Alight at...</a></li>
-          </ul>
-          <ul class="button-group">
-            <li><a href="#form-bottom" class="small button add-direction add-walk">Walk</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-trike">Tricycle</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-jeep">Jeep</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-bus">Bus</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-fx">FX</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-mrt">MRT</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-lrt">LRT</a></li>
-            <li><a href="#form-bottom" class="small button add-direction add-lrt2">LRT2</a></li>
-          </ul>
-        </div>
-
 
         <div class="row">
           <div class="large-9 columns">
+            <form class="form-add-directions">
               <section class="route-building blank">
 
                 <div class="status">
@@ -46,7 +31,26 @@
                 </div>
 
               </section>
-              <input type="submit" class="button expand hide save-directions" value="Add Directions">
+              <div class="submit-set">
+
+                <div class="button-bar add-directions-buttons">
+                  <ul class="button-group">
+                    <li><a href="#form-bottom" class="small button add-direction add-alight">Alight at...</a></li>
+                  </ul>
+                  <ul class="button-group">
+                    <li><a href="#form-bottom" class="small button add-direction add-walk">Walk</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-trike">Tricycle</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-jeep">Jeep</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-bus">Bus</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-fx">FX</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-mrt">MRT</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-lrt">LRT</a></li>
+                    <li><a href="#form-bottom" class="small button add-direction add-lrt2">LRT2</a></li>
+                  </ul>
+                </div>
+                <input type="submit" class="button expand save-directions hide" value="Save Directions">
+              </div>
+            </form>
 
             <a name="form-bottom"></a>
           </div>
